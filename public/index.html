@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Interface</title>
+    <meta name="description" content="Antarmuka chatbot interaktif yang memberikan solusi cepat untuk pertanyaan pengguna.">
+    <meta name="keywords" content="chatbot, antarmuka, interaktif, solusi, teknologi, aplikasi">
+    <link rel="icon" href="/logo.webp" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        .typing-indicator {
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+        }
+        .dot {
+            height: 10px;
+            width: 10px;
+            margin: 0 3px;
+            border-radius: 50%;
+            background-color: #6b7280; /* Gray color */
+            animation: bounce 0.6s infinite alternate;
+        }
+        .dot:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        .dot:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-10px); }
+        }
+		pre {
+			background-color: #282c34;
+			color: #ffffff;
+			padding: 10px;
+			overflow-x: auto; 
+			white-space: pre-wrap;
+		}
+		code {
+			font-family: 'Courier New',
+		}
+    </style>
+	<link rel="stylesheet" href="/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-gray-100">
+	<header class="w-full fixed top-0 z-50 flex justify-center items-center text-gray-700">
+		<div class="flex w-full justify-between items-center bg-white container m-auto py-4 px-6">
+			<a href="/">
+				<div class="flex gap-2 items-center">
+					<img class="h-12 w-12" src="/logo.webp"/>
+					<div class="flex flex-col">
+						<span class="text-2xl font-bold">ChatBot AI</span>
+						<span class="text-xs">Safe for duplicate questions!</span>
+					</div>
+				</div>
+			</a>
+			<a href="https://github.com/fitri-hy" target="_blank">
+				<i class="text-2xl fa-brands fa-github"></i>
+			</a>
+		</div>
+	</header>
+    <div class="p-4 h-screen py-24 container m-auto bg-white">
+        <div id="conversation" class="overflow-y-auto border h-full p-4 rounded-lg"></div>
+    </div>
+	<header class="w-full fixed bottom-0 z-50 flex justify-center items-center text-gray-700">
+		<div class="bg-white container m-auto py-4 px-4 flex gap-2">
+			<input type="text" id="user-input" placeholder="Type your question here..." class="border p-2 rounded w-full" />
+			<button id="send-button" class="bg-blue-500 text-white rounded px-4 py-2 mt-2">Send</button>
+		</div>
+	</footer>
+    <script src="script.js"></script>
+</body>
+</html>

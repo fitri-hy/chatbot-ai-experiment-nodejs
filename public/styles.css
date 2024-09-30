@@ -1,0 +1,146 @@
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold !important;
+    margin-top: 0 !important;
+    margin-bottom: 0.5em !important;
+}
+
+h1 {
+    font-size: 2rem !important;
+}
+
+h2 {
+    font-size: 1.5rem !important;
+}
+
+h3 {
+    font-size: 1.25rem !important;
+}
+
+h4 {
+    font-size: 1rem !important;
+}
+
+h5 {
+    font-size: 0.75rem !important;
+}
+
+h6 {
+    font-size: 0.5rem !important;
+}
+
+p {
+    margin: 0 0 1em !important;
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+}
+
+article a {
+    color: rgb(236, 72, 153) !important;
+    text-decoration: none !important;
+    transition: color 0.3s ease !important;
+}
+
+article a:hover {
+    color: rgb(219, 39, 119) !important;
+    text-decoration: underline !important;
+}
+
+blockquote {
+    border-left: 4px solid #007bff !important;
+    padding-left: 1em !important;
+    margin: 1em 0 !important;
+    font-style: italic !important;
+}
+
+ul {
+    margin: 0 0 1em !important;
+    padding-left: 2em !important;
+    list-style-type: disc !important;
+    line-height: 1.6 !important;
+    font-size: 0.875rem !important;
+}
+
+ol {
+    margin: 0 0 1em !important;
+    padding-left: 2em !important;
+    line-height: 1.6 !important;
+    font-size: 0.875rem !important;
+}
+
+li {
+    margin-bottom: 0.5em !important;
+    font-size: 0.875rem !important;
+}
+
+table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin: 1em 0 !important;
+}
+
+th, td {
+    border: 1px solid #ddd !important;
+    padding: 0.75em !important;
+    text-align: left !important;
+    line-height: 1.6 !important;
+}
+
+th {
+    background-color: #f8f9fa !important;
+    font-weight: bold !important;
+}
+
+.dark th {
+    background-color: #2d2d2d !important;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem !important;
+    }
+
+    h2 {
+        font-size: 1.25rem !important;
+    }
+
+    h3 {
+        font-size: 1rem !important;
+    }
+
+    h4 {
+        font-size: 0.75rem !important;
+    }
+
+    h5 {
+        font-size: 0.5rem !important;
+    }
+
+    h6 {
+        font-size: 0.35rem !important;
+    }
+
+    p {
+        font-size: 0.875rem !important;
+    }
+
+    pre {
+        font-size: 0.875rem !important;
+    }
+	
+    ul {
+        margin: 0 0 1em !important;
+        padding-left: 1em !important;
+        list-style-type: disc !important;
+        line-height: 1.6 !important;
+    }
+
+    ol {
+        margin: 0 0 1em !important;
+        padding-left: 1em !important;
+        line-height: 1.6 !important;
+    }
+
+    li {
+        font-size: 0.875rem !important;
+    }
+}
