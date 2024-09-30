@@ -6,3 +6,9 @@ Antarmuka chatbot interaktif yang memberikan solusi cepat untuk pertanyaan pengg
 - realtime
 - easy custom
 - API ready
+
+```
+const configSave = {
+    dataSet: true // true save to database.json | flse dont save to database.json
+};
+```
