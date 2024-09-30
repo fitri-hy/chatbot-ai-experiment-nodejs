@@ -1,2 +1,7 @@
-# chatbot-ai-experiment-nodejs
-Safe for duplicate questions! || Antarmuka chatbot interaktif yang memberikan solusi cepat untuk pertanyaan pengguna.
+# Chatbot AI Experiment NodeJS
+Antarmuka chatbot interaktif yang memberikan solusi cepat untuk pertanyaan pengguna.
+
+- Safe for duplicate questions
+- realtime
+- easy custome
+- API ready
