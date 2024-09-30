@@ -7,8 +7,8 @@ Antarmuka chatbot interaktif yang memberikan solusi cepat untuk pertanyaan pengg
 - easy custom
 - API ready
 
-```
+```javascript
 const configSave = {
-    dataSet: true // true save to database.json | flse dont save to database.json
+    dataSet: true // true save to database.json | false dont save to database.json
 };
 ```
